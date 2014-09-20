@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<meta charset="utf-8">
+		<title>Code Editor</title>
+		<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="codeEditorcss.css">
+		<!-- loading javascript files -->
+		<script src="lib/codemirror.js"></script>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="lib/codemirror.css">
+		<script src="mode/javascript/javascript.js"></script>
+		<script src="addon/hint/javascript-hint.js"></script>
+		<script src="addon/hint/anyword-hint.js"></script>
+		<!-- for palcehoder  -->
+		<script type="text/javascript" src="addon/display/placeholder.js"></script>
+		<link rel="stylesheet" href="doc/docs.css">
+		<!-- hint -->
+		<link rel="stylesheet" type="text/css" href="addon/hint/show-hint.css">
+		
+		<script src="addon/hint/show-hint.js"></script>
+		<script src="addon/mode/loadmode.js"></script>
+		<!-- auto closed bracket -->
+		<script src="addon/edit/closebrackets.js"></script>
+		<!-- auto closed tag in html -->
+		<script type="text/javascript" src="addon/edit/closetag.js"></script>
+		<script type="text/javascript" src="addon/fold/xml-fold.js"></script>
+		<script type="text/javascript" src="mode/xml/xml.js"></script>
+		<script type="text/javascript" src="mode/css/css.js"></script>
+		<script type="text/javascript" src="mode/vbscript/vbscript.js"></script>
+		<script type="text/javascript" src="mode/htmlmixed/htmlmixed.js"></script>	
+		<!-- folding feature for html/xml -->
+		<link rel="stylesheet" type="text/css" href="addon/fold/foldgutter.css">
+		<script type="text/javascript" src="addon/fold/foldgutter.js"></script>
+		<script type="text/javascript" src="addon/fold/foldcode.js"></script>
+		<script type="text/javascript" src="addon/fold/brace-fold.js"></script>
+		<script type="text/javascript" src="addon/fold/markdown-fold.js"></script>
+		<script type="text/javascript" scr="addon/fold/comment-fold.js"></script>
+		<script type="text/javascript" src="addon/fold/indent-fold.js"></script>
+		<script type="text/javascript" src="mode/markdown/markdown.js"></script>
+	<!-- impelement other languages -->
+	    <script src="mode/clike/clike.js"></script>
+	    <script src="addon/edit/matchbrackets.js"></script>
+
+		<style type="text/css">
+		.CodeMirror { border: 1px solid silver; }
+		.CodeMirror-empty { outline: 1px solid #c22; }
+		.CodeMirror-empty.CodeMirror-focused { outline: none; }
+		.CodeMirror pre.CodeMirror-placeholder { color: #999; }
+		</style>
+		<!-- setting styles -->
+		<style type="text/css">
+		body{
+			
+		
+		}
+		
+		.CodeMirror{
+			
+			/*the testArea style goes here */
+		}
+		
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			
+			<textarea id="code" name="code" placeholder="type code here.."></textarea>
+
+			</div>
+		</body>
+		<script src="codeEditorjs.js" type="text/javascript"></script>
+		<script id="script"></script>
+	</html>
