@@ -1,4 +1,4 @@
 resume
 ======
 
-sample code show to FactSet
+sample code by Shanni
